@@ -1,0 +1,24 @@
+<!DOCKTYPE html>
+<html onkeypress="openFull">
+  <head>
+    <title>Fullscreen</title>
+  </head>
+  <body>
+    <h1>TRY TO ESCAPE</h1>
+    <script>
+      var elem = document.documentElement;
+      function openFull() {
+        elem.requestFullscreen();
+        elem.webkitRequestFullscreen();
+        elem.msRequestFullscreen();
+      }
+
+      function closeFull() {
+        document.exitFullscreen();
+        document.webkitExitFullscreen();
+        document.msExitFullscreen();
+      }
+    
+</script>
+  </body>
+</html>
